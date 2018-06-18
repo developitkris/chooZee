@@ -1,5 +1,8 @@
 <h1>What drink should I drink today?</h1>
-<button type="button" name="button">browse all drinks</button>
+<select (change)="onChange($event.target.value)">
+  <option value="allDrinks">All Drinks</option>
+</select>
+
 <div class="form-group">
   <label for="selectDrinks">Choose your drink(s)</label>
   <select multiple class="form-control" id="selectDrinks">

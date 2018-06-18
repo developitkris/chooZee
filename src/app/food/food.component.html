@@ -1,11 +1,35 @@
 <h1>What kind of food do you want to eat today?</h1>
-<button type="button" name="button">browse all food</button>
+<select (change)="onChange($event.target.value)">
+  <option value="allFood">All Food</option>
+</select>
+
 <div class="form-group">
-  <label for="selectFood">Choose a food category</label>
+  <label for="selectFood">Choose a Course</label>
   <select multiple class="form-control" id="selectFood">
+    <option>appetizers</option>
     <option>breakfast</option>
-    <option>lunch</option>
-    <option>dinner</option>
+    <option>main dish</option>
+    <option>side dish</option>
   </select>
-  <button type="submit" name="submitFood">Submit</button>
+</div>
+<div class="form-group">
+  <label for="cuisineType">Choose a Cuisine</label>
+  <input type="text" class="form-control" id="cuisineType" placeholder="Italian">
+</div>
+<div class="form-group">
+  <label for="foodType">Choose a Type</label>
+  <select multiple class="form-control" id="foodType">
+    <option>grill</option>
+    <option>kid friendly</option>
+    <option>diabetic</option>
+    <option>gluten-free</option>
+    <<option>vegeterian</option>
+    <option>vegan</option>
+  </select>
+</div>
+<div class="form-group">
+  <label for="eventType">Choose an Occasion</label>
+  <input type="text" class="form-control" id="eventType" placeholder="Quick and Easy">
+</div>
+  <button type="submit" name="submitFood">Recipes!</button>
 </div>
