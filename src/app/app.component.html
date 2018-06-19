@@ -1,13 +1,28 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
 <div style="text-align:center">
   <h1>
     chooZee your movie!
   </h1>
   <!-- <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="> -->
 </div>
-<form>
+
+<fieldset>
+  <legend>Name an Actor: </legend>
+  <input type="text" id="actor-search" value="">
+</fieldset>
+<button class="btn btn-lg btn-success" id="searchMovies">Search Movies!</button>
+<div class="showMovies">
+
+</div>
+
+<app-movie-form></app-movie-form>
+
+<!-- <form>
   <fieldset>
-  <legend>Choose your favorite genre(s)</legend>
+  <legend>Choose genre(s)</legend>
     <div>
       <input type="checkbox" id="action" name="interest" value="action">
       <label for="action">Action</label>
@@ -19,6 +34,14 @@
     <div>
       <input type="checkbox" id="comedy" name="interest" value="comedy">
       <label for="comedy">Comedy</label>
+    </div>
+    <div>
+      <input type="checkbox" id="crime" name="interest" value="crime">
+      <label for="crime">Crime</label>
+    </div>
+    <div>
+      <input type="checkbox" id="documentary" name="interest" value="documentary">
+      <label for="documentary">Documentary</label>
     </div>
     <div>
       <input type="checkbox" id="drama" name="interest" value="drama">
@@ -33,8 +56,36 @@
       <label for="mystery">Mystery</label>
     </div>
     <div>
-      <input type="checkbox" id="mystery" name="interest" value="mystery">
-      <label for="mystery">Mystery</label>
+      <input type="checkbox" id="romance" name="interest" value="romance">
+      <label for="romance">Romance</label>
+    </div>
+    <div>
+      <input type="checkbox" id="fantasy" name="interest" value="fantasy">
+      <label for="fantasy">Fantasy</label>
+    </div>
+    <div>
+      <input type="checkbox" id="family" name="interest" value="family">
+      <label for="family">Family</label>
+    </div>
+    <div>
+      <input type="checkbox" id="science-fiction" name="interest" value="science-fiction">
+      <label for="science-fiction">Science Fiction</label>
+    </div>
+    <div>
+      <input type="checkbox" id="war" name="interest" value="war">
+      <label for="war">War</label>
+    </div>
+    <div>
+      <input type="checkbox" id="horror" name="interest" value="horror">
+      <label for="horror">Horror</label>
+    </div>
+    <div>
+      <input type="checkbox" id="music" name="interest" value="music">
+      <label for="music">Music</label>
+    </div>
+    <div>
+      <input type="checkbox" id="western" name="interest" value="western">
+      <label for="western">Western</label>
     </div>
     <div>
       <input type="checkbox" id="other" name="interest" value="other">
@@ -45,4 +96,4 @@
       <button type="submit">Submit form</button>
     </div>
   </fieldset>
-</form>
+</form> -->

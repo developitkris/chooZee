@@ -1,0 +1,20 @@
+<p>
+  movie-form works!
+</p>
+
+<h1>Movie  Form</h1>
+
+<form>
+  <div class="form-group">
+    <label for="name">Actor Name</label>
+    <input type=text #actorName>
+  </div>
+  <button (click)="getActorByName(actorName.value)">Get Actors</button>
+</form>
+
+<div *ngIf="movies">
+  <app-movie-list [childMovies]="movies"></app-movies-list>
+</div>
+<div *ngIf="movies===null">
+    <h3>There were no movies</h3>
+</div>

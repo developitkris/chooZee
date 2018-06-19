@@ -1,0 +1,9 @@
+<p>
+  movie-list works!
+</p>
+
+<h1>Movie List:</h1>
+<h2> From {{childMovies.movies[0].name}}</h2>
+<div *ngFor="let movie of childMovies.movies;" class="movie">
+  <img src = {{movie.img_src}}/>
+</div>
