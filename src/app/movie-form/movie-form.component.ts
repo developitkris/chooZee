@@ -24,13 +24,7 @@ export class MovieFormComponent implements OnInit {
       // console.log(response.json().results[1].title);
       this.selectedMovie = response.json().results[1];
       console.log(this.selectedMovie);
-      // if (response.json().results.length > 0) {
-      //   this.movies = true;
-      // }
-
-      let testVar = response.json().results[0].title;
-
-      console.log(testVar)
+      
     })
 
 
