@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WelcomeComponent } from './welcome/welcome.component'
 
 
 @Component({
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'chooZee111';
 }

@@ -1,0 +1,43 @@
+<div class="container">
+  <h1>What kind of food do you want to eat today?</h1>
+    <!-- <select (change)="onChange($event.target.value)">
+      <option value="allFood">All Food</option>
+    </select> -->
+  <form (ngSubmit)="onSubmit()" #food="ngForm">
+    <div class="form-group">
+      <label for="course">Choose a Course</label>
+      <input type="text" class="form-control" id="course" placeholder="main dish"
+        required
+        [(ngModel)]="model.course" course="course">
+    </div>
+
+    <div class="form-group">
+      <label for="cuisine">Choose a Cuisine</label>
+      <input type="text" class="form-control" id="cuisine" placeholder="Italian"
+        required
+        [(ngModel)]="model.cuisine" name="cuisine">
+    </div>
+
+    <div class="form-group">
+      <label for="diet">Choose a Type of Diet</label>
+      <select class="form-control" id="diet"
+        required
+        [(ngModel)]="model.diet" name="diet">
+        <option *ngFor="let dietType of diets" [value]="dietType">{{dietType}}</option>
+      </select>
+      <div [hidden]="diet.valid || power.pristine" class="alert alert-danger">
+        Diet Type is required
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="event">Choose an Occasion</label>
+      <input type="text" class="form-control" id="event" placeholder="Quick and Easy"
+      required
+      [(ngModel)]="model.event" name="event">
+    </div>
+
+      <button type="submit" class="btn btn-success" [disabled]="!food.form.valid">Submit</button>
+  </form>
+</div>
+
