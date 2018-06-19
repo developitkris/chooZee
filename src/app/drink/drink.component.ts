@@ -17,6 +17,7 @@ export class DrinkComponent implements OnInit {
   ngOnInit() {
   this.getDrink();
   }
+
   getDrink(){
   console.log( this.http.get("https://www.thecocktaildb.com/api/json/v1/1/random.php"));
   this.http.get("https://www.thecocktaildb.com/api/json/v1/1/random.php").subscribe(response => {
@@ -24,11 +25,12 @@ export class DrinkComponent implements OnInit {
       this.randDrink = response.json().drinks[0].strDrink;
     });
   }
-addfav(description:string){
-  // console.log(title);
-  // console.log(poster);
-  // console.log(overview);
-  var newDrink: Drink = new Drink(description, f, s);
-  this.DrinkService.addDrink(newDrink);
-}
+
+  addFavDrink(alcohol, type, name){
+    console.log(alcohol);
+    console.log(type);
+    console.log(name);
+    let newDrink: Drink = new Drink(true, "", "");
+    this.DrinkService.addDrink(newDrink);
+  }
 }

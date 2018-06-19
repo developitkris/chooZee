@@ -1,26 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
-import { Food } from './models/food.model';
-import { FoodService } from './../services/food.service';
+import { Food } from '../models/food.model';
+// import { FoodService } from '../services/food.service';
 
 
 @Component({
   selector: 'app-food',
   templateUrl: './food.component.html',
   styleUrls: ['./food.component.css'],
-  providers: [FoodService]
+  // providers: [FoodService]
 })
 
 export class FoodComponent implements OnInit {
   favFoods= null;
-  constructor(private http: Http, private FoodService:FoodService) { }
+  constructor(private http: Http) { }
 
   ngOnInit() {
-    this.getFavFoods();
+  this.getFavFoods();
   }
 
-  getfavFoods(){
+  getFavFoods(){
   console.log( this.http.get("http://www.bigoven.com/recipes"));
   this.http.get("http://www.bigoven.com/recipes").subscribe(response => {
     this.favFoods = response.json().results;
@@ -29,13 +29,13 @@ export class FoodComponent implements OnInit {
   });
     }
 
-  addfav(cuisine:string, type:string, diet:string, event:string){
+  addfav(cuisine, type, diet, event){
     console.log(cuisine);
     console.log(type);
     console.log(diet);
     console.log(event);
-    let newFoodFav: Food= new Food(cuisine, type, diet, event);
-      this.FoodService.addfav(newFoodFav);
+    let newFoodFav: Food= new Food("", "", "", "");
+      // this.FoodService.addfav(newFoodFav);
   }
 
 }
