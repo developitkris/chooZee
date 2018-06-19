@@ -12,6 +12,10 @@ const appRoutes: Routes = [
     path:'about',
     component: AboutComponent
   },
+  {
+    path: 'contact-us',
+    component: ContactUsComponent
+  }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
