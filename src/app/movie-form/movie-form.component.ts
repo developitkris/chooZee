@@ -18,9 +18,9 @@ export class MovieFormComponent implements OnInit {
     this.getMovie();
   }
   getMovie(){
-    console.log( this.http.get("https://api.themoviedb.org/3/search/movie?api_key=357e76b265bade398b205c7b05084ffa&query=Jack+Reacher"));
+    // console.log( this.http.get("https://api.themoviedb.org/3/search/movie?api_key=357e76b265bade398b205c7b05084ffa&query=Jack+Reacher"));
     this.http.get("https://api.themoviedb.org/3/search/movie?api_key=357e76b265bade398b205c7b05084ffa&query=Jack+Reacher").subscribe(response => {
-      console.log(response.json());
+      console.log(response.json().results[0].title);
     })
 
   }
