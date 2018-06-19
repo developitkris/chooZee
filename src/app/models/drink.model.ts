@@ -3,5 +3,5 @@ export class Drink {
     public alcohol: boolean,
     public type: string,
     public name: string,
-  )
+  ){}
 }
