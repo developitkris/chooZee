@@ -4,7 +4,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AppComponent } from './app.component';
-import { DrinksComponent } from './drinks/drinks.component';
+import { DrinkComponent } from './drink/drink.component';
 const appRoutes: Routes = [
   {
     path:'',
@@ -24,7 +24,7 @@ const appRoutes: Routes = [
   },
   {
     path:'drinks',
-    component: DrinksComponent
+    component: DrinkComponent
   }
 ];
 

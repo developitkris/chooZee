@@ -4,5 +4,5 @@ export class Food {
     public type: string,
     public diet: string,
     public event: string
-  )
+  ){}
 }
