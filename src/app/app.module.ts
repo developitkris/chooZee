@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { MovieFormComponent } from './movie-form/movie-form.component';
+import { GenreListComponent } from './genre-list/genre-list.component';
+
 
 @NgModule({
   declarations: [
@@ -14,6 +17,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     WelcomeComponent,
     AboutComponent,
     ContactUsComponent,
+    MovieFormComponent,
+    GenreListComponent
   ],
   imports: [
     BrowserModule,
