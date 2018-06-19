@@ -3,19 +3,30 @@
 </p>
 
 <h1>Movie  Form</h1>
+<div *ngIf="selectedMovie">
+  <h3>{{selectedMovie.title}}</h3> <br>
+  <p>{{selectedMovie.overview}}</p>
+</div>
 
 <form>
   <div class="form-group">
     <label for="name">Search</label>
-    <input type=text #actorName>
-  <button (click)="getActorByName(actorName.value)">Movie Suggestions</button>
+    <p>{{movies.results}}</p>
+    <input type=text>
+  <button (click)="getMovie()" type="button">Movie Suggestions</button>
+
+  <p>{{results}}</p>
+
 </div>
 </form>
 
 <div *ngIf="movies">
-  <app-movie-list [childMovies]="movies"></app-movie-list>
+  <app-movie-list [childMovies]="movies">
+<p>Hello</p>
+  </app-movie-list>
+
 </div>
 
-<div *ngIf="movies===null">
-    <h3>There were no movies</h3>
+<div *ngIf="!movies">
+    <h3>There are no movies</h3>
 </div>
