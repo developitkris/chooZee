@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { DrinksComponent } from './drinks/drinks.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-//import {routing} from './app.routing';
+import {routing} from './app.routing';
 
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
@@ -27,7 +27,7 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
-    //routing,
+    routing,
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
