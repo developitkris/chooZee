@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FoodComponent } from './food/food.component';
+//import { FoodComponent } from './food/food.component';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -26,7 +26,7 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    FoodComponent,
+  //  FoodComponent,
     WelcomeComponent,
     AboutComponent,
     ContactUsComponent,

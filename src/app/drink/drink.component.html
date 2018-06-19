@@ -1,22 +1,13 @@
-<div class="container">
-  <h1>What drink should I drink today?</h1>
-  <!-- <select (change)="onChange($event.target.value)">
-    <option value="allDrinks">All Drinks</option>
-  </select> -->
-  <form (ngSubmit)="onSubmit()" #drinks="ngForm">
-    <div class="form-group">
-      <label for="drink">Choose a Drink Type</label>
-      <select class="form-control" id="drink"
-          required
-          [(ngModel)]="model.drink" name="drink"
-          #drink="ngModel">
-        <option *ngFor="let drinkType of drinks" [value]="drinkType">{{drinkType}}</option>
-      </select>
-      <div [hidden]="drink.valid || drink.pristine" class="alert alert-danger">
-        Drink Type is required
-      </div>
-    </div>
+<div class="container container-fluid">
+  <h1>Get Drinks</h1>
+  <label for="drink">Enter a drink:</label>
+  <input class="form-control" id="location" type="text">
+  <br>
 
-      <button type="submit" class="btn btn-success" [disabled]="!drinks.form.valid">Submit</button>
-  </form>
+  <div *ngIf="randDrink">
+    <p>{{randDrink.strDrink}}</p>
+    <img src="{{randDrink.strDrinkThumb}}">
+  </div> 
+  <button type="submit"class="btn btn-lg btn-success" id="drinkInfo"  (click)="getDrink()">Get Info!</button>
+    
 </div>
