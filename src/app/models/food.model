@@ -6,11 +6,3 @@ export class Food {
     public event: string
   )
 }
-
-export class Drinks {
-  constructor(
-    public alcohol: boolean,
-    public type: string,
-    public name: string,
-  )
-}
