@@ -7,8 +7,19 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-import { AppComponent } from './app.component';
+import { DrinksComponent } from './drinks/drinks.component';
 import { FoodComponent } from './food/food.component';
+
+
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { routing } from './app.routing';
+import { AppComponent } from './app.component';
+
+import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutComponent } from './about/about.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -20,15 +31,22 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    FoodComponent
+
+    DrinksComponent,
+    FoodComponent,
+  ],
+    WelcomeComponent,
+    AboutComponent,
+    ContactUsComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

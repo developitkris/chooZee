@@ -4,9 +4,11 @@ import { Observable } from 'rxjs/Observable';
 import { Food } from './models/food.model';
 import { FoodService } from './../services/food.service';
 
+
 @Component({
   selector: 'app-food',
   templateUrl: './food.component.html',
+
   styleUrls: ['./food.component.css'],
   providers: [FoodService]
 })
@@ -36,4 +38,5 @@ export class FoodComponent implements OnInit {
     let newFoodFav: Food= new Food(cuisine, type, diet, event);
       this.FoodService.addfav(newFoodFav);
   }
+
 }
