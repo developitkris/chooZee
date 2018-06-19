@@ -6,15 +6,16 @@
 
 <form>
   <div class="form-group">
-    <label for="name">Actor Name</label>
+    <label for="name">Search</label>
     <input type=text #actorName>
-  </div>
-  <button (click)="getActorByName(actorName.value)">Get Actors</button>
+  <button (click)="getActorByName(actorName.value)">Movie Suggestions</button>
+</div>
 </form>
 
 <div *ngIf="movies">
-  <app-movie-list [childMovies]="movies"></app-movies-list>
+  <app-movie-list [childMovies]="movies"></app-movie-list>
 </div>
+
 <div *ngIf="movies===null">
     <h3>There were no movies</h3>
 </div>
