@@ -11,7 +11,7 @@ import { Http, Response } from '@angular/http';
 })
 
 export class MovieFormComponent implements OnInit {
-  movies = true;
+  // movies = true;
   selectedMovie = null;
   constructor(private http: Http, private movieTitle: MovieSearch ) { }
 
@@ -22,9 +22,9 @@ export class MovieFormComponent implements OnInit {
     // console.log( this.http.get("https://api.themoviedb.org/3/search/movie?api_key=357e76b265bade398b205c7b05084ffa&query=Jack+Reacher"));
     this.http.get("https://api.themoviedb.org/3/search/movie?api_key=357e76b265bade398b205c7b05084ffa&query=Jack+Reacher").subscribe(response => {
       // console.log(response.json().results[1].title);
-      this.selectedMovie = response.json().results[1];
+      this.selectedMovie = response.json().results;
       console.log(this.selectedMovie);
-      
+
     })
 
 
