@@ -1,29 +1,18 @@
-
 h1 {
-  font-style: ;
+  font-family: helvetica;
+  margin-bottom: 2%;
+  font-size: 18pt;
 }
-
 .parent {
   width: 100%;
   top: 0;
   left: 0;
-
 }
-
-.image1 {
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  /*border: 10px;*/
-}
-.image2 {
-  width: 100%;
-  top: 30px;
-  left: 70px;
-}
-.image3 {
-  width: 100%;
-  top: 30px;
-  left: 70px;
-}
+.gallery {
+    margin-top: 10%;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; }
