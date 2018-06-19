@@ -19,7 +19,7 @@ export class DrinkComponent implements OnInit {
   ngOnInit() {
   // this.getDrink();
   }
-  
+
   getDrink(){
   console.log( this.http.get("https://www.thecocktaildb.com/api/json/v1/1/random.php"));
   this.http.get("https://www.thecocktaildb.com/api/json/v1/1/random.php").subscribe(response => {
