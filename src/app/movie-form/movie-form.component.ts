@@ -18,15 +18,21 @@ export class MovieFormComponent implements OnInit {
   ngOnInit(){
     // this.getMovie();
   }
-  getMovie(){
-    // console.log( this.http.get("https://api.themoviedb.org/3/search/movie?api_key=357e76b265bade398b205c7b05084ffa&query=Jack+Reacher"));
-    this.http.get("https://api.themoviedb.org/3/search/movie?api_key=357e76b265bade398b205c7b05084ffa&query=Jack+Reacher").subscribe(response => {
+  getMovie(keyword: string){
+    event.preventDefault();
+    event.stopPropagation();
+
+    this.http.get(`https://api.themoviedb.org/3/search/multi?api_key=357e76b265bade398b205c7b05084ffa&language=en-US&query=${keyword}&page=1&include_adult=false`).subscribe(response => {
       // console.log(response.json().results[1].title);
       this.selectedMovie = response.json().results;
       console.log(this.selectedMovie);
 
+
+
     })
 
+//JACK REACHER TEST
+//"https://api.themoviedb.org/3/search/movie?api_key=357e76b265bade398b205c7b05084ffa&query=Jack+Reacher"
 
   }
 

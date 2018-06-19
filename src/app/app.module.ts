@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
 import { MovieFormComponent } from './movie-form/movie-form.component';
-import { MovieListComponent } from './movie-list/movie-list.component';
+import { GenreListComponent } from './genre-list/genre-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieFormComponent,
-    MovieListComponent
+    GenreListComponent
   ],
   imports: [
     BrowserModule,
