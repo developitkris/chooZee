@@ -28,7 +28,8 @@ addfav(description:string){
   // console.log(title);
   // console.log(poster);
   // console.log(overview);
-  var newDrink: Drink = new Drink(description, f, s);
+  var newDrink: Drink = new Drink(true, "f", "s");
   this.DrinkService.addDrink(newDrink);
 }
+
 }

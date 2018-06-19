@@ -5,13 +5,14 @@ import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AppComponent } from './app.component';
 import { DrinkComponent } from './drink/drink.component';
+import { FoodComponent } from './food/food.component';
 const appRoutes: Routes = [
   {
     path:'',
     component: AppComponent
   },
   {
-    path:'',
+    path:'welcome',
     component: WelcomeComponent
   },
   {
@@ -25,8 +26,11 @@ const appRoutes: Routes = [
   {
     path:'drinks',
     component: DrinkComponent
+  },
+  {
+    path:'food',
+    component: FoodComponent
   }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
-

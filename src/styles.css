@@ -17,3 +17,14 @@ header {
   right:0;
   height: 30px;
 }
+
+body{
+  font-family: helvetica;
+}
+
+#pBar{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
