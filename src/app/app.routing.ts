@@ -10,7 +10,7 @@ import { MovieComponent } from './movie/movie.component';
 
 const appRoutes: Routes = [
   {
-    path:'welcome',
+    path:'',
     component: WelcomeComponent
   },
   {
