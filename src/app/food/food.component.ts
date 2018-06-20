@@ -11,25 +11,24 @@ import { foodApi } from '../api-keys';
    //providers: [FoodApi]
 })
 export class FoodComponent implements OnInit {
-  selectedCuisine= null;
+  selectedCategory= null;
 
 
   constructor(private http: Http) { }
 
   ngOnInit() {
-//  this.getByCuisine();
+//  this.getByCategory();
   }
 
-
-  getByCuisine(keyword: string){
+  getByCategory(keyword: string){
     event.preventDefault();
     event.stopPropagation();
 
   console.log(this.http.get(`http://food2fork.com/api/search?key=${foodApi}&q=${keyword}`));
   this.http.get(`http://food2fork.com/api/search?key=${foodApi}&q=${keyword}`).subscribe(response => {
     console.log(response.json().recipes);
-    this.selectedCuisine = response.json().recipes;
-    console.log(this.selectedCuisine);
+    this.selectedCategory = response.json().recipes;
+    console.log(this.selectedCategory);
   });
     }
 

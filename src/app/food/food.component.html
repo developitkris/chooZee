@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>What kind of food do you want to eat today?</h1>
+  <h1>What will you eat now?</h1>
   <!-- <form (ngSubmit)="onSubmit()" #food="ngForm"> -->
     <!-- <div class="form-group">
       <label for="course">Choose a Course</label>
@@ -36,8 +36,9 @@
 
       <!-- <button type="submit" class="btn btn-success" [disabled]="!food.form.valid">Submit</button>
   </form> -->
-
-  <h1>Food</h1>
+  <br>
+  <br>
+  <h1>Cuisine</h1>
     <!-- <form>
       <div class="form-group">
         <input type=text #keywordSearch>
@@ -55,26 +56,32 @@
       <h3>There are no movies</h3>
   </div> -->
 
-
-
-
-
-
-
-
   <form>
     <div class="form-group">
       <input type=text #foodSearch>
-      <button (click)="getByCuisine(foodSearch.value)" type="submit">Food Suggestions</button>
+      <button (click)="getByCategory(foodSearch.value)" type="submit">Food Suggestions</button>
     </div>
   </form>
-  <div *ngIf="selectedCuisine">
-    <div *ngFor="let food of selectedCuisine">
+
+
+  <div *ngIf="selectedCategory">
+    <div *ngFor="let food of selectedCategory">
       <img src="http://image.tmdb.org/t/p/w342/{{food.poster_path}}" alt="">
-    <h3>{{food.publisher}}</h3>
+    <h3>
+      <div class="container container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="container" id="food-result">
+              <a href="{{food.source_url}}"><br>{{food.title}}<br><img src="{{food.image_url}}"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </h3>
     </div>
   </div>
-  <div *ngIf="!selectedCuisine">
+  <div *ngIf="!selectedCategory">
       <h3>None</h3>
   </div>
 </div>
+

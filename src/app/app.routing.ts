@@ -14,10 +14,6 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 const appRoutes: Routes = [
   {
     path:'',
-    component: AppComponent
-  },
-  {
-    path:'welcome',
     component: WelcomeComponent
   },
   {
