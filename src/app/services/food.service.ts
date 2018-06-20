@@ -5,7 +5,7 @@ import { Food } from '../models/food.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
-export class FoodApi {
+export class FoodApi{
   // favFoods: FirebaseListObservable<any[]>;
   // constructor(private http: Http) {
   //   this.favFoods = database.list('favFoods');
@@ -25,6 +25,4 @@ export class FoodApi {
   //
   // getBySeasonal(event: string){
   //   return this.http.get(`http://www.bigoven.com/recipes`)
-  // }
 }
-
