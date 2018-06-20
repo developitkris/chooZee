@@ -4,7 +4,6 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {routing} from './app.routing';
-
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -14,6 +13,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { DrinkComponent } from './drink/drink.component';
 import { FoodComponent } from './food/food.component';
+import { TestComponent } from './test/test.component';
+
 
 
 export const firebaseConfig = {
@@ -23,6 +24,10 @@ export const firebaseConfig = {
   storageBucket: masterFirebaseConfig.storageBucket
 };
 
+// export let foodApi = {
+//   apiKey: masterFoodApi.apiKey
+// };
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +36,7 @@ export const firebaseConfig = {
     AboutComponent,
     ContactUsComponent,
     DrinkComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
