@@ -1,21 +1,21 @@
-<!-- <div class="container">
-  <h1>What kind of food do you want to eat today?</h1>
-  <form (ngSubmit)="onSubmit()" #food="ngForm">
-    <div class="form-group">
+<div class="container">
+  <h1>What will you eat now?</h1>
+  <!-- <form (ngSubmit)="onSubmit()" #food="ngForm"> -->
+    <!-- <div class="form-group">
       <label for="course">Choose a Course</label>
       <input type="text" class="form-control" id="course" placeholder="main dish"
         required
         [(ngModel)]="model.course" course="course">
-    </div>
+    </div> -->
 
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="cuisine">Choose a Cuisine</label>
       <input type="text" class="form-control" id="cuisine" placeholder="Italian"
         required
         [(ngModel)]="model.cuisine" name="cuisine">
-    </div>
+    </div> -->
 
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="diet">Choose a Type of Diet</label>
       <select class="form-control" id="diet"
         required
@@ -32,18 +32,56 @@
       <input type="text" class="form-control" id="event" placeholder="Quick and Easy"
       required
       [(ngModel)]="model.event" name="event">
+    </div> -->
+
+      <!-- <button type="submit" class="btn btn-success" [disabled]="!food.form.valid">Submit</button>
+  </form> -->
+  <br>
+  <br>
+  <h1>Cuisine</h1>
+    <!-- <form>
+      <div class="form-group">
+        <input type=text #keywordSearch>
+        <button (click)="getMovie(keywordSearch.value)" type="submit">Movie Suggestions</button>
+      </div>
+    </form> -->
+  <!-- <div *ngIf="selectedMovie">
+    <div *ngFor="let movie of selectedMovie">
+      <img src="http://image.tmdb.org/t/p/w342/{{movie.poster_path}}" alt="">
+    <h3>{{movie.title}}</h3>
+      <p>{{movie.overview}}</p>
     </div>
+  </div>
+  <div *ngIf="!selectedMovie">
+      <h3>There are no movies</h3>
+  </div> -->
 
-      <button type="submit" class="btn btn-success" [disabled]="!food.form.valid">Submit</button>
+  <form>
+    <div class="form-group">
+      <input type=text #foodSearch>
+      <button (click)="getByCategory(foodSearch.value)" type="submit">Food Suggestions</button>
+    </div>
   </form>
-</div> -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
-</html>
+
+  <div *ngIf="selectedCategory">
+    <div *ngFor="let food of selectedCategory">
+      <img src="http://image.tmdb.org/t/p/w342/{{food.poster_path}}" alt="">
+    <h3>
+      <div class="container container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="container" id="food-result">
+              <a href="{{food.source_url}}"><br>{{food.title}}<br><img src="{{food.image_url}}"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </h3>
+    </div>
+  </div>
+  <div *ngIf="!selectedCategory">
+      <h3>None</h3>
+  </div>
+</div>
+
