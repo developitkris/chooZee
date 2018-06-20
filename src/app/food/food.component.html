@@ -1,8 +1,5 @@
 <div class="container">
   <h1>What kind of food do you want to eat today?</h1>
-    <!-- <select (change)="onChange($event.target.value)">
-      <option value="allFood">All Food</option>
-    </select> -->
   <form (ngSubmit)="onSubmit()" #food="ngForm">
     <div class="form-group">
       <label for="course">Choose a Course</label>
@@ -40,4 +37,3 @@
       <button type="submit" class="btn btn-success" [disabled]="!food.form.valid">Submit</button>
   </form>
 </div>
-

@@ -32,12 +32,12 @@ export class DrinkComponent implements OnInit {
 );
 
   }
-addfav(alcohol,type,name){
-  // console.log(title);
-  // console.log(poster);
-  // console.log(overview);
-  var newDrink: Drink = new Drink(true, "fun", "sour");
-  this.DrinkService.addDrink(newDrink);
-  console.log(newDrink)
-}
+
+  addFavDrink(alcohol, type, name){
+    console.log(alcohol);
+    console.log(type);
+    console.log(name);
+    let newDrink: Drink = new Drink(true, "", "");
+    this.DrinkService.addDrink(newDrink);
+  }
 }

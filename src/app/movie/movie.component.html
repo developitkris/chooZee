@@ -1,0 +1,17 @@
+<h1>Movie  Form</h1>
+  <form>
+    <div class="form-group">
+      <input type=text #keywordSearch>
+      <button (click)="getMovie(keywordSearch.value)" type="submit">Movie Suggestions</button>
+    </div>
+  </form>
+<div *ngIf="selectedMovie">
+  <div *ngFor="let movie of selectedMovie">
+    <img src="http://image.tmdb.org/t/p/w342/{{movie.poster_path}}" alt="">
+  <h3>{{movie.title}}</h3>
+    <p>{{movie.overview}}</p>
+  </div>
+</div>
+<div *ngIf="!selectedMovie">
+    <h3>There are no movies</h3>
+</div>
