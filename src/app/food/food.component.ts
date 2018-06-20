@@ -5,9 +5,6 @@ import { Food } from '../models/food.model';
 import { foodApi } from '../api-keys';
 // import { FoodService } from '../services/food.service';
 
-
-import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-food',
   templateUrl: './food.component.html',

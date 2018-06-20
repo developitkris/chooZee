@@ -6,6 +6,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AppComponent } from './app.component';
 import { DrinkComponent } from './drink/drink.component';
 import { FoodComponent } from './food/food.component';
+import { MovieComponent } from './movie/movie.component';
+
 const appRoutes: Routes = [
   {
     path:'',
@@ -30,6 +32,10 @@ const appRoutes: Routes = [
   {
     path:'food',
     component: FoodComponent
+  },
+  {
+    path:'movie',
+    component: MovieComponent
   }
 ];
 

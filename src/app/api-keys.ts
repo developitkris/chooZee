@@ -6,4 +6,6 @@ export var masterFirebaseConfig = {
     messagingSenderId: "1053366380263"
   };
 
-export let foodApi = {apiKey: "fc77fbefbdad80dc77d45b773f37d2ee"};
+export let foodApi = "fc77fbefbdad80dc77d45b773f37d2ee";
+
+export let movieSearchKey = "357e76b265bade398b205c7b05084ffa";

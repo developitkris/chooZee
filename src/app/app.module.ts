@@ -14,6 +14,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { DrinkComponent } from './drink/drink.component';
 import { FoodComponent } from './food/food.component';
 import { TestComponent } from './test/test.component';
+import { MovieComponent } from './movie/movie.component';
 
 
 
@@ -37,6 +38,7 @@ export const firebaseConfig = {
     ContactUsComponent,
     DrinkComponent,
     TestComponent,
+    MovieComponent,
   ],
   imports: [
     BrowserModule,
