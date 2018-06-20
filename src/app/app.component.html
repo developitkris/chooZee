@@ -33,7 +33,7 @@
         <a class="button" (click)="logout()">Log out</a>
       </li>
       <li *ngIf ="!isLoggedIn">
-        <a id="logInbutton" class="btn btn-light" (click)="login()">Log in</a>
+        <a id="logInbutton" class="btn btn-light" (click)="login()" routerLink="users">Log in</a>
       </li>
     </ul>
 </nav>

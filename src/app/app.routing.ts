@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { DrinkComponent } from './drink/drink.component';
 import { FoodComponent } from './food/food.component';
 import { MovieComponent } from './movie/movie.component';
+import { UserComponent } from './user/user.component';
 
 const appRoutes: Routes = [
   {
@@ -36,6 +37,10 @@ const appRoutes: Routes = [
   {
     path:'movie',
     component: MovieComponent
+  },
+  {
+    path:'users',
+    component: UserComponent
   }
 ];
 

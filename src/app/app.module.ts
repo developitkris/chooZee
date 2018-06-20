@@ -15,6 +15,7 @@ import { DrinkComponent } from './drink/drink.component';
 import { FoodComponent } from './food/food.component';
 import { TestComponent } from './test/test.component';
 import { MovieComponent } from './movie/movie.component';
+import { UserComponent } from './user/user.component';
 
 
 
@@ -39,6 +40,7 @@ export const firebaseConfig = {
     DrinkComponent,
     TestComponent,
     MovieComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
