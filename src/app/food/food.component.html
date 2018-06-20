@@ -1,21 +1,21 @@
 <div class="container">
   <h1>What kind of food do you want to eat today?</h1>
-  <form (ngSubmit)="onSubmit()" #food="ngForm">
-    <div class="form-group">
+  <!-- <form (ngSubmit)="onSubmit()" #food="ngForm"> -->
+    <!-- <div class="form-group">
       <label for="course">Choose a Course</label>
       <input type="text" class="form-control" id="course" placeholder="main dish"
         required
         [(ngModel)]="model.course" course="course">
-    </div>
+    </div> -->
 
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="cuisine">Choose a Cuisine</label>
       <input type="text" class="form-control" id="cuisine" placeholder="Italian"
         required
         [(ngModel)]="model.cuisine" name="cuisine">
-    </div>
+    </div> -->
 
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="diet">Choose a Type of Diet</label>
       <select class="form-control" id="diet"
         required
@@ -32,8 +32,49 @@
       <input type="text" class="form-control" id="event" placeholder="Quick and Easy"
       required
       [(ngModel)]="model.event" name="event">
-    </div>
+    </div> -->
 
-      <button type="submit" class="btn btn-success" [disabled]="!food.form.valid">Submit</button>
+      <!-- <button type="submit" class="btn btn-success" [disabled]="!food.form.valid">Submit</button>
+  </form> -->
+
+  <h1>Food</h1>
+    <!-- <form>
+      <div class="form-group">
+        <input type=text #keywordSearch>
+        <button (click)="getMovie(keywordSearch.value)" type="submit">Movie Suggestions</button>
+      </div>
+    </form> -->
+  <!-- <div *ngIf="selectedMovie">
+    <div *ngFor="let movie of selectedMovie">
+      <img src="http://image.tmdb.org/t/p/w342/{{movie.poster_path}}" alt="">
+    <h3>{{movie.title}}</h3>
+      <p>{{movie.overview}}</p>
+    </div>
+  </div>
+  <div *ngIf="!selectedMovie">
+      <h3>There are no movies</h3>
+  </div> -->
+
+
+
+
+
+
+
+
+  <form>
+    <div class="form-group">
+      <input type=text #foodSearch>
+      <button (click)="getByCuisine(foodSearch.value)" type="submit">Food Suggestions</button>
+    </div>
   </form>
+  <div *ngIf="selectedCuisine">
+    <div *ngFor="let food of selectedCuisine">
+      <img src="http://image.tmdb.org/t/p/w342/{{food.poster_path}}" alt="">
+    <h3>{{food.publisher}}</h3>
+    </div>
+  </div>
+  <div *ngIf="!selectedCuisine">
+      <h3>None</h3>
+  </div>
 </div>
