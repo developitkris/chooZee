@@ -6,14 +6,17 @@ import { foodApi } from '../api-keys';
 // import { FoodService } from '../services/food.service';
 
 
+import { Component, OnInit } from '@angular/core';
+
 @Component({
   selector: 'app-food',
   templateUrl: './food.component.html',
+
   styleUrls: ['./food.component.css'],
   // providers: [FoodService]
 })
-
 export class FoodComponent implements OnInit {
+
   favFoods= null;
   constructor(private http: Http) { }
 
