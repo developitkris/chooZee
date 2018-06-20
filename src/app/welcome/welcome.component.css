@@ -3,16 +3,34 @@ h1 {
   margin-bottom: 2%;
   font-size: 18pt;
 }
-.parent {
-  width: 100%;
-  top: 0;
-  left: 0;
+#showcase{
+  background-color: #CBEDEF;
+  background-size:cover;
+  background-position:center;
+  height:85vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
 }
-.gallery {
-    margin-top: 10%;
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-width: 33%;
-    -moz-column-width: 33%;
-    column-width: 33%; }
+#showcase h1{
+  font-size:50px;
+  line-height:1.2;
+}
+#showcase p{
+  font-size: 35px;
+  font-weight: bold;
+}
+#showcase .button{
+  font-size:18px;
+  text-decoration:none;
+  border: 2px solid;
+  padding:10px 20px;
+  border-radius:30px;
+  margin-top:20px;
+}
+#showcase .button:hover{
+  color: #FFE677;
+}

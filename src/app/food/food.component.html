@@ -63,6 +63,7 @@
     </div>
   </form>
 
+
   <div *ngIf="selectedCategory">
     <div *ngFor="let food of selectedCategory">
       <img src="http://image.tmdb.org/t/p/w342/{{food.poster_path}}" alt="">
@@ -83,3 +84,4 @@
       <h3>None</h3>
   </div>
 </div>
+
