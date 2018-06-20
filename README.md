@@ -14,9 +14,17 @@ It should:
 * 3. Display a recipe for a meal based on user preferences.
 * 4. Include an about page.
 * 5. Include a contact page.
-                                                                             
 
+## Known bugs ##
 
+_No known bugs_
+
+## Technologies used ##
+* HTML5/css
+* Javascript
+* npm (Node Package Manager)
+* Angular.js
+* Google Firebase
 
 # ChooZee app
 

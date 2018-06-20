@@ -2,6 +2,7 @@ import { User } from '../models/user.model';
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
+
 @Injectable()
 export class UserService {
   users: FirebaseListObservable<any[]>;
@@ -24,5 +25,9 @@ export class UserService {
   deleteUser(localUserToDelete){
     var userEntryInFirebase = this.getUserById(localUserToDelete.$key);
     userEntryInFirebase.remove();
+  }
+  submitForm(firstName: string, lastName: string, userName: string, email: string) {
+    var newUser: User = new User(firstName, lastName, userName, email);
+    this.addUser(newUser);
   }
   }

@@ -8,6 +8,8 @@ import { DrinkComponent } from './drink/drink.component';
 import { FoodComponent } from './food/food.component';
 import { MovieComponent } from './movie/movie.component';
 import { UserComponent } from './user/user.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 const appRoutes: Routes = [
   {
@@ -41,6 +43,15 @@ const appRoutes: Routes = [
   {
     path:'users',
     component: UserComponent
+  },
+  {
+    path: 'user-list',
+    component: UserListComponent
+  },
+  
+  {
+    path: 'users/:id',
+    component: UserDetailsComponent
   }
 ];
 

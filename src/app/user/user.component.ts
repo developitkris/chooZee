@@ -10,7 +10,7 @@ import { User } from '../models/user.model'
 })
 export class UserComponent implements OnInit {
 
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
   }

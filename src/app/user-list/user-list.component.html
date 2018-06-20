@@ -1,0 +1,15 @@
+<h1>
+All Users:
+</h1>
+<div *ngFor="let user of users | async" class="panel panel-default">
+<div class="panel-body">
+  <div class="col">
+    <h4 (click)="goToDetailPage(user)"> {{user.firstName}} {{user.lastName}}</h4>
+  </div>
+  <div *ngIf="currentRoute === '/user'">
+    {{user.description}}
+    <hr>
+    <app-edit-user [selectedUser]="user"></app-edit-user>
+  </div>
+</div>
+</div>
