@@ -23,6 +23,10 @@ export const firebaseConfig = {
   storageBucket: masterFirebaseConfig.storageBucket
 };
 
+export let foodApi = {
+  apiKey: masterFoodApi.apiKey
+};
+
 @NgModule({
   declarations: [
     AppComponent,
