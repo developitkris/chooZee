@@ -12,18 +12,25 @@ import { DrinkService } from '../services/drink.service'
 })
 export class DrinkComponent implements OnInit {
   randDrink = null;
+
+
   constructor(private http: Http, private DrinkService:DrinkService) { }
 
   ngOnInit() {
-  this.getDrink();
+  // this.getDrink();
   }
 
   getDrink(){
   console.log( this.http.get("https://www.thecocktaildb.com/api/json/v1/1/random.php"));
   this.http.get("https://www.thecocktaildb.com/api/json/v1/1/random.php").subscribe(response => {
-      console.log(response.json().drinks[0]);
-      this.randDrink = response.json().drinks[0].strDrink;
-    });
+      this.randDrink = response.json().drinks[0];
+      console.log(this.randDrink);
+      
+  },
+  err => console.error(err),
+  () => console.log('getDrink completed')
+);
+
   }
 
   addFavDrink(alcohol, type, name){

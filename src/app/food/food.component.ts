@@ -38,5 +38,4 @@ export class FoodComponent implements OnInit {
     let newFoodFav: Food= new Food("", "", "", "");
       // this.FoodService.addfav(newFoodFav);
   }
-
-}
+// }
