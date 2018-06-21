@@ -13,7 +13,7 @@ import { DrinkService } from '../services/drink.service'
 export class DrinkComponent implements OnInit {
   randDrink = null;
   myAlcDrink = null;
-
+  randomDrink = null;
   constructor(private http: Http, private DrinkService:DrinkService) { }
 
   ngOnInit() {
@@ -24,25 +24,29 @@ export class DrinkComponent implements OnInit {
   console.log( this.http.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}`));
   this.http.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}`).subscribe(response => {
       this.randDrink = response.json().drinks[0];
-      this.myAlcDrink = response.json().drinks[0].strAlcoholic;
-      if(this.myAlcDrink === "Alcoholic")
-      {
-        return alert("this is alcoholic")
-      }
+      // this.myAlcDrink = response.json().drinks[0].strAlcoholic;
+      // if(this.myAlcDrink === "Alcoholic")
+      // {
+      //   return alert("this is alcoholic")
+      // }
       console.log(this.randDrink);
-      
+
   },
   err => console.error(err),
   () => console.log('getDrink completed')
 );
 
   }
+getRandomDrink(){
+  this.http.get("https://www.thecocktaildb.com/api/json/v1/1/random.php").subscribe(response => {
+      this.randomDrink = response.json().drinks[0];
 
-  addFavDrink(alcohol, type, name){
-    console.log(alcohol);
-    console.log(type);
-    console.log(name);
-    let newDrink: Drink = new Drink(true, "", "");
-    this.DrinkService.addDrink(newDrink);
-  }
+      console.log(this.randomDrink);
 }
+//   addFavDrink(alcohol, type, name){
+//     console.log(alcohol);
+//     console.log(type);
+//     console.log(name);
+//     let newDrink: Drink = new Drink(true, "", "");
+//     this.DrinkService.addDrink(newDrink);
+   }

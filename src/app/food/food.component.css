@@ -25,3 +25,10 @@ body{
   font-weight: bold;
   font-size: 16pt;
 }
+img{
+  height: 300px;
+  width: 500px;
+}
+.container{
+  margin-top: 5%;
+}

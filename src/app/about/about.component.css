@@ -1,5 +1,6 @@
 .container{
   text-align: left;
+  margin-top: 3%;
 }
 .image1 {
   width: 100%;
@@ -17,4 +18,10 @@
   width: 100%;
   top: 30px;
   left: 70px;
+}
+.container2{
+  text-align: center;
+}
+h1{
+  text-align: center;
 }

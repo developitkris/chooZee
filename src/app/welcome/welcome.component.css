@@ -1,8 +1,8 @@
 #showcase{
-  background-image: url("/assets/img/landing.jpg");
+  background-image: url("/assets/img/pic.png");
   background-size:cover;
   background-position:center;
-  height:97vh;
+  height:90vh;
   display:flex;
   flex-direction:column;
   justify-content:center;
