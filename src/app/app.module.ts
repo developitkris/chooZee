@@ -15,14 +15,12 @@ import { DrinkComponent } from './drink/drink.component';
 import { FoodComponent } from './food/food.component';
 import { TestComponent } from './test/test.component';
 import { MovieComponent } from './movie/movie.component';
-<<<<<<< HEAD
 import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
-=======
 import { NavbarComponent } from './navbar/navbar.component';
->>>>>>> master
+
 
 
 
@@ -47,14 +45,11 @@ export const firebaseConfig = {
     DrinkComponent,
     TestComponent,
     MovieComponent,
-<<<<<<< HEAD
     UserComponent,
     UserListComponent,
     EditUserComponent,
-    UserDetailsComponent
-=======
-    NavbarComponent,
->>>>>>> master
+    UserDetailsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
