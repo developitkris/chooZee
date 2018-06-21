@@ -1,13 +1,23 @@
-<app-navbar></app-navbar>
-<div class="container container-fluid">
-  <h1>Get Drinks</h1>
-  <label for="drink">Enter a drink:</label>
-  <input class="form-control" id="location" type="text">
-  <br>
-  <div *ngIf="randDrink">
-    Name: <h4>{{randDrink.strDrink}}</h4>
-    <img src="{{randDrink.strDrinkThumb}}">
-    <em>Instructions:</em> <p>{{randDrink.strInstructions}}</p>
-  </div>
-  <button type="submit"class="btn btn-lg btn-success" id="drinkInfo"  (click)="getDrink()">Get Info!</button>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="drinkForm" class="container container-fluid">
+        <input class="form-control" id="location" type="text">
+        <button type="submit"class="button" id="drinkInfo"  (click)="getDrink()">chooZee your drink</button>
+      <br>
+      <br>
+      <br>
+      <div *ngIf="randDrink">
+        <h4>{{randDrink.strDrink}}</h4>
+        <img src="{{randDrink.strDrinkThumb}}">
+        <br>
+        <br>
+        <em>Instructions:</em> <p>{{randDrink.strInstructions}}</p>
+      </div>
+    </div>
+  </body>
+</html>

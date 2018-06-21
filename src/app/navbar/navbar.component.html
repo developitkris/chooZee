@@ -1,8 +1,21 @@
-<nav class="navbar navbar-expand-lg" >
+<nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" id="title" routerLink="">
     chooZee
   </a>
-  <!-- <ul class="nav navbar-nav navbar-right">
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="drink">Drinks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="food">Food</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="movie">Movies</a>
+      </li>
+    </ul>
+  </div>
+  <ul class="nav navbar-nav navbar-right">
       <li *ngIf="isLoggedIn">
         <a class="btn">User: {{userName}}</a>
         <a class="button" (click)="logout()">Log out</a>
@@ -10,5 +23,5 @@
       <li *ngIf ="!isLoggedIn">
         <a id="logInbutton" class="btn btn-light" (click)="login()">Log in</a>
       </li>
-    </ul> -->
+    </ul>
 </nav>

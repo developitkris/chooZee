@@ -1,0 +1,44 @@
+html, body{
+  padding: 0;
+  margin: 0;
+  background-image: url("/assets/img/drinks.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 900px 900px;
+  font-family: helvetica;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+}
+#location{
+  width: 50%;
+}
+.button{
+  font-size:15px;
+  text-decoration:none;
+  border: 1px solid black;
+  padding:10px 20px;
+  border-radius:25px;
+  margin-top:20px;
+  color: black;
+}
+.button:hover{
+  color: white;
+  background-color: black;
+}
+#drinkLabel{
+  margin-left: 13%;
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 25pt;
+}
+#drinkForm{
+  margin-top: 5%;
+  margin left: 3%;
+}
+h4{
+  font-size: 30pt;
+}

@@ -1,10 +1,7 @@
-<app-navbar></app-navbar>
-<app-sidebar></app-sidebar>
-<h1>Movie  Form</h1>
-  <form>
-    <div class="form-group">
-      <input type=text #keywordSearch>
-      <button (click)="getMovie(keywordSearch.value)" type="submit">Movie Suggestions</button>
+<form>
+    <div class="form-group container">
+      <input id="movieInput" type=text #keywordSearch>
+      <button class="button" (click)="getMovie(keywordSearch.value)" type="submit">chooZee your movie</button>
     </div>
   </form>
 <div *ngIf="selectedMovie">
@@ -15,5 +12,5 @@
   </div>
 </div>
 <div *ngIf="!selectedMovie">
-    <h3>There are no movies</h3>
+    <h3></h3>
 </div>
