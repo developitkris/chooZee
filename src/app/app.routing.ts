@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { DrinkComponent } from './drink/drink.component';
 import { FoodComponent } from './food/food.component';
 import { MovieComponent } from './movie/movie.component';
+import { DrinkFilterComponent } from './drink-filter/drink-filter.component';
+
 
 const appRoutes: Routes = [
   {
@@ -25,6 +27,11 @@ const appRoutes: Routes = [
     path:'drinks',
     component: DrinkComponent
   },
+  {
+    path:'drink-filter',
+    component: DrinkFilterComponent;
+  },
+
   {
     path:'food',
     component: FoodComponent

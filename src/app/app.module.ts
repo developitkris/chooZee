@@ -16,6 +16,7 @@ import { FoodComponent } from './food/food.component';
 import { TestComponent } from './test/test.component';
 import { MovieComponent } from './movie/movie.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DrinkFilterComponent } from './drink-filter/drink-filter.component';
 
 
 
@@ -26,9 +27,7 @@ export const firebaseConfig = {
   storageBucket: masterFirebaseConfig.storageBucket
 };
 
-// export let foodApi = {
-//   apiKey: masterFoodApi.apiKey
-// };
+
 
 @NgModule({
   declarations: [
@@ -41,6 +40,7 @@ export const firebaseConfig = {
     TestComponent,
     MovieComponent,
     NavbarComponent,
+    DrinkFilterComponent,
   ],
   imports: [
     BrowserModule,
