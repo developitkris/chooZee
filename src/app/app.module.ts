@@ -20,6 +20,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -49,7 +50,8 @@ export const firebaseConfig = {
     UserListComponent,
     EditUserComponent,
     UserDetailsComponent,
-    NavbarComponent
+    NavbarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
