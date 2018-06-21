@@ -1,7 +1,9 @@
 #title{
   font-size: 45pt;
-  font-weight: bold;
 }
 #logInbutton{
   border-radius: 50px;
+}
+nav{
+  margin-left: 3%;
 }

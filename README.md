@@ -1,3 +1,31 @@
+# Decision making website #
+
+#### By_**Dennise Ortega, Kristi Hwang, Jim Polawski, Austin Roberts**_ 6/20/18
+
+## Description ##
+
+This is a website that helps users decide which movies to see, what meal to eat or what drinks to drink.
+
+## Specifications ##
+It should:
+
+* 1. Display a drink suggestion based on user search criteria.
+* 2. Display a list of movie suggestions based on a user search.
+* 3. Display a recipe for a meal based on user preferences.
+* 4. Include an about page.
+* 5. Include a contact page.
+
+## Known bugs ##
+
+_No known bugs_
+
+## Technologies used ##
+* HTML5/css
+* Javascript
+* npm (Node Package Manager)
+* Angular.js
+* Google Firebase
+
 # ChooZee app
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
