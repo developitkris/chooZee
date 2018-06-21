@@ -1,3 +1,9 @@
-<p>
-  user-details works!
-</p>
+<div class="container">
+  <h3>Details for username:  {{(userToDisplay | async)?.userName}}</h3>
+  <div class="jumbotron">
+    <h4>First Name:  {{(userToDisplay | async)?.firstName}}</h4>
+    <h4>Last Name:  {{(userToDisplay | async)?.lastName}}</h4>
+    <h4>email:  {{(userToDisplay | async)?.email}}</h4>
+    <button (click)="beginUpdatingUser(selectedUser)">Edit User</button>
+  </div>
+</div>
