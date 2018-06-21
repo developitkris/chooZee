@@ -1,21 +1,26 @@
-<h6>Please Enter User Information</h6>
 
-<form>
-  <div class="form-group">
-    <label for="firstName">First Name</label>
-    <input type="text" class="form-control" id="firstName"  placeholder="Enter first name">
+<div class="container">
+  <h6>Please Enter User Information</h6>
+  <form>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName"  placeholder="Enter first name" #newFirstName>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName"  placeholder="Enter last name" #newLastName>
+    </div>
+    <div class="form-group">
+      <label for="updateUserName">Username</label>
+      <input type="text" class="form-control" id="updateUserName"  placeholder="Enter username" #newUserName>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" #newEmail>
+    </div>
+    <!-- <button (click)="submitForm(newFirstName.value, newLastName.value, newUserName.value, newEmail.value); newFirstName.value=''; newLastName.value=''; newUserName.value=''"; type="submit" class="btn btn-primary">Submit</button> -->
+    <button (click)="submitForm(newFirstName.value, newLastName.value, newUserName.value, newEmail.value); newFirstName.value=''; newLastName.value=''; newUserName.value=''; newEmail.value='';"  class="btn btn-primary">Submit</button>
+  </form>
+  <div>
+    <app-user-list></app-user-list>
   </div>
-  <div class="form-group">
-    <label for="lastName">Last Name</label>
-    <input type="text" class="form-control" id="lastName"  placeholder="Enter last name">
-  </div>
-  <div class="form-group">
-    <label for="updateUserName">Username</label>
-    <input type="text" class="form-control" id="updateUserName"  placeholder="Enter username">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-  <button type="submit" class="btn btn-primary" routerLink="">Submit</button>
-</form>

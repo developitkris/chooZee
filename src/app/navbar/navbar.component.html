@@ -16,6 +16,9 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="movie">Movies</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="user-list">User List</a>
+      </li>
     </ul>
   </div>
   <ul class="nav navbar-nav navbar-right">
@@ -24,7 +27,7 @@
         <a class="button" (click)="logout()">Log out</a>
       </li>
       <li *ngIf ="!isLoggedIn">
-        <a id="logInbutton" class="btn btn-light" (click)="login()">Log in</a>
+        <a id="logInbutton" class="btn btn-light" (click)="login()" routerLink="user">Log in</a>
       </li>
     </ul>
 </nav>

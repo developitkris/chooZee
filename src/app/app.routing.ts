@@ -10,6 +10,7 @@ import { MovieComponent } from './movie/movie.component';
 import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
 
 const appRoutes: Routes = [
   {
@@ -37,17 +38,21 @@ const appRoutes: Routes = [
     component: MovieComponent
   },
   {
-    path:'users',
+    path:'user',
     component: UserComponent
   },
   {
     path: 'user-list',
     component: UserListComponent
   },
-  
+
   {
-    path: 'users/:id',
+    path: 'user/:id',
     component: UserDetailsComponent
+  },
+  {
+    path: 'edit-user',
+    component: EditUserComponent
   }
 ];
 

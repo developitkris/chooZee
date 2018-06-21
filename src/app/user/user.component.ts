@@ -14,5 +14,9 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
   }
+  submitForm(firstName: string, lastName: string, userName: string, email: string){
+    var newUser: User = new User(firstName, lastName, userName, email);
+    this.userService.addUser(newUser);
+  }
 
 }
