@@ -12,7 +12,7 @@ import { DrinkService } from '../services/drink.service'
 })
 export class DrinkComponent implements OnInit {
   randDrink = null;
-
+  myAlcDrink = null;
 
   constructor(private http: Http, private DrinkService:DrinkService) { }
 
@@ -20,10 +20,15 @@ export class DrinkComponent implements OnInit {
   // this.getDrink();
   }
 
-  getDrink(){
-  console.log( this.http.get("https://www.thecocktaildb.com/api/json/v1/1/random.php"));
-  this.http.get("https://www.thecocktaildb.com/api/json/v1/1/random.php").subscribe(response => {
+  getDrink(keyword: string){
+  console.log( this.http.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}`));
+  this.http.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}`).subscribe(response => {
       this.randDrink = response.json().drinks[0];
+      this.myAlcDrink = response.json().drinks[0].strAlcoholic;
+      if(this.myAlcDrink === "Alcoholic")
+      {
+        return alert("this is alcoholic")
+      }
       console.log(this.randDrink);
       
   },

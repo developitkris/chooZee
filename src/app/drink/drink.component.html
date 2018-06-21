@@ -1,8 +1,18 @@
 <div class="container container-fluid">
-  <h1>Get Drinks</h1>
-  <label for="drink">Enter a drink:</label>
-  <input class="form-control" id="location" type="text">
-  <br>
+  <form>
+    <div class="form-group">
+      <input type=text #keywordSearch>
+<br>
+      <label>Alcoholic<br>
+        <input type="radio" name="al" value="large"/>
+      </label>
+      <label>Non-Alcoholic<br>
+        <input type="radio" name="al" value="small"/>
+      </label>
+      <br>
+      <button class="btn btn-primary" (click)="getDrink(keywordSearch.value)" type="submit">Get Drinks</button>
+    </div>
+  </form>
 
   <div *ngIf="randDrink">
     Name: <h4>{{randDrink.strDrink}}</h4>

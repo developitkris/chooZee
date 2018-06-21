@@ -29,7 +29,7 @@ const appRoutes: Routes = [
   },
   {
     path:'drink-filter',
-    component: DrinkFilterComponent;
+    component: DrinkFilterComponent
   },
 
   {
