@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div id="drinkForm" class="container container-fluid">
-        <input class="form-control" id="location" type="text">
-        <button type="submit"class="button" id="drinkInfo"  (click)="getDrink()">chooZee your drink</button>
+<div class="container container-fluid">
+
+  <form>
+    <div class="form-group">
+      <input type=text #keywordSearch>
+<br>
+      <label>Alcoholic<br>
+        <input type="radio" name="al" value="large"/>
+      </label>
+      <label>Non-Alcoholic<br>
+        <input type="radio" name="al" value="small"/>
+      </label>
       <br>
-      <br>
-      <br>
-      <div *ngIf="randDrink">
-        <h4>{{randDrink.strDrink}}</h4>
-        <img src="{{randDrink.strDrinkThumb}}">
-        <br>
-        <br>
-        <em>Instructions:</em> <p>{{randDrink.strInstructions}}</p>
-      </div>
+      <button class="btn btn-primary" (click)="getDrink(keywordSearch.value)" type="submit">Get Drinks</button>
     </div>
-  </body>
-</html>
+  </form>
+
+  <div *ngIf="randDrink">
+    Name: <h4>{{randDrink.strDrink}}</h4>
+    <img src="{{randDrink.strDrinkThumb}}">
+    <em>Instructions:</em> <p>{{randDrink.strInstructions}}</p>
+  </div>
+  <button type="submit"class="btn btn-lg btn-success" id="drinkInfo"  (click)="getDrink()">Get Info!</button>
+</div>
+

@@ -11,6 +11,7 @@ import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 
+
 const appRoutes: Routes = [
   {
     path:'',
