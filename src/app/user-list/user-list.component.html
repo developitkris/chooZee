@@ -7,7 +7,7 @@ All Users:
       <h4 (click)="goToDetailPage(user)"> {{user.firstName}} {{user.lastName}}</h4>
     </div>
     <div *ngIf="currentRoute === '/user'">
-    {{user.firstName}} {{user.lastName}} 
+    {{user.firstName}} {{user.lastName}}
       <hr>
       <app-edit-user [selectedUser]="user"></app-edit-user>
     </div>

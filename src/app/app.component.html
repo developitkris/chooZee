@@ -1,59 +1,13 @@
-<!-- <<<<<<< HEAD
-<nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" id="title" routerLink="welcome">
-    chooZee
-  </a> -->
-
-  <!-- <div class="collapse navbar-collapse">
-    <ul class="navbar-nav mr-auto">
-
-      <li class="nav-item">
-        <a class="nav-link" routerLink="about">About</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" routerLink="contact-us">Contact Us</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" routerLink="drinks">Drinks</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" routerLink="food">Food</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" routerLink="movie">Movies</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="user-list">User List</a>
-      </li>
-    </ul>
-  </div>
-  <ul class="nav navbar-nav navbar-right">
-      <li *ngIf="isLoggedIn">
-        <a class="btn">User: {{userName}}</a>
-        <a class="button" (click)="logout()">Log out</a>
-      </li>
-      <li *ngIf ="!isLoggedIn">
-        <a id="logInbutton" class="btn btn-light" (click)="login()" routerLink="users">Log in</a>
-      </li>
-    </ul>
-</nav>
-
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
-======= -->
 <html>
   <head>
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-      <app-navbar></app-navbar>
+    <app-navbar></app-navbar>
       <router-outlet></router-outlet>
+      <footer>Powered by Epicodus Students
+      <a routerLink="contact-us">Contact Us</a>
+      <a routerLink="about">About</a></footer>
   </body>
 </html>
-<!-- >>>>>>> master -->

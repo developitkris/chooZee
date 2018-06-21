@@ -20,19 +20,12 @@ import { EditUserComponent } from './edit-user/edit-user.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-
-
-
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
   databaseURL: masterFirebaseConfig.databaseURL,
   storageBucket: masterFirebaseConfig.storageBucket
 };
-
-// export let foodApi = {
-//   apiKey: masterFoodApi.apiKey
-// };
 
 @NgModule({
   declarations: [

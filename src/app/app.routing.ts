@@ -12,6 +12,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 
+
 const appRoutes: Routes = [
   {
     path:'',
@@ -26,7 +27,7 @@ const appRoutes: Routes = [
     component: ContactUsComponent
   },
   {
-    path:'drinks',
+    path:'drink',
     component: DrinkComponent
   },
   {
