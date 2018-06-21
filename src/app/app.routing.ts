@@ -25,7 +25,7 @@ const appRoutes: Routes = [
     component: ContactUsComponent
   },
   {
-    path:'drinks',
+    path:'drink',
     component: DrinkComponent
   },
   {
@@ -44,7 +44,7 @@ const appRoutes: Routes = [
     path: 'user-list',
     component: UserListComponent
   },
-  
+
   {
     path: 'users/:id',
     component: UserDetailsComponent
