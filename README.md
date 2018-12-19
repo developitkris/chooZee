@@ -1,6 +1,6 @@
 # Decision making website #
 
-#### By_**Dennise Ortega, Kristi Hwang, Jim Polawski, Austin Roberts**_ 6/20/18
+#### By_**Dennise Ortega, Kristi Hwang, Jim Polawski, Austin Roberts, CJ Rhone**_ 6/20/18
 
 ## Description ##
 
